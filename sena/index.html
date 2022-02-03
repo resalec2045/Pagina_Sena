@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<title>Animalillegal</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  <!-- CDN'S -->
+    <script src="abrir.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+      
+<body>
+            <!-- menu -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> <i style="color: yellow;" class="fa fa-home"></i> inicio</a> 
+                <a href="datos.html"> <i style="color: yellow;" class="fa fa-close"></i> Fauna ilegal</a> 	
+                <a href="legales.html"> <i style="color: blue;" class="fa fa-thumbs-up"></i> Fauna legal</a>
+                <a href="denuncias.html"> <i style="color: red;" class="fa fa-group"></i> Denuncias</a></div> 
+
+            <!-- id buscar -->
+    <a style='cursor: pointer;' onClick="muestra_oculta('contenido')" ><i id="boton_mostrar" class="material-icons ">search</i></a>
+    <div id="contenido"> <p> próximamente </p></div>
+
+            <!-- para abrir el menu -->
+<font style='cursor: pointer;' color="#0091ff" ><span onclick="openNav()"><i id="menu" class="material-icons ">menu</i></span></font>
+            
+            <!-- primer tiutlo arriba -->
+<div id=titulo1><h3><font color="#FFFF00">Fauna</font><font color="#0051FF">Colom</font><font color="#FF0000">biana </font></h3></div> 
+  
+            
+           <!-- Envio de datos -->
+        
+    <div id="registro"><h1>Registrese</h1></div>
+    
+    <!-- introduccion -->
+    <div id=introduccion><p>Al registrarte nos ayudas a hacer un conteo del numero de personas las cuales entran a nuesta pagina y esta informacion no sirve para porder adaptarla mejor para el numero de personas las cuales entran ¡Gracias!. (Una vez te registres te enviara a la pagina de inicio con mas información) </p></div> 
+            
+    <div id=Titulo_Cuest> 
+        <form id="cuestinarioiu" action="php/envio.php" method="post" >
+    Ingrese su Nombre:<br>
+    <input id=text_int type="text" name="nombre"><br>
+    
+    Ingrese su numero de cedula:<br>
+    <input id=text_int type="text" name="cedula"><br>
+    
+    Ingrese su numero de telefono:<br>
+    <input id=text_int type="text" name="telefono"><br>
+    
+    Ingrese su edad:<br>
+    <input id=text_int type="text" name="edad"><br>
+            
+    Ingrese el nombre de su pais:<br>
+    <input id=text_int type="text" name="pais"><br>
+    
+    
+    <input id=cuestinarioiu style='cursor: pointer;' type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+</html>
+
